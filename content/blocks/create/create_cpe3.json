@@ -1,0 +1,27 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":90, 
+"description":"Powerful advanced CPE lab converts graphite to CPE using water and energy.",
+"displayNane":"create cpe3",
+"consumes":{
+power: 1.5
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.1
+    }
+
+"items":[{"item":graphite,"amount":1}]
+},
+
+"health":3600,
+"itemCapacity":160,
+"name": "creat cpe 3",
+"outputItem":{"item":"cpe","amount":6},
+"requirements":[{"item":"cpe","amount":480}],
+"research":"crafter gold",
+"size":3
+"type": "GenericCrafter",
+
+    alwaysUnlocked: true
+}

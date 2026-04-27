@@ -1,0 +1,20 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":45, 
+"description":"Converts cpe to graphite",
+"displayNane":"create cpe3",
+"consumes":{
+"items":[{"item":coal,"amount":4}]
+}
+"health":3600,
+"itemCapacity":80,
+"name": "creat graphite",
+"outputItem":{"item":"graphite","amount":3},
+"requirements":[{"item":"cpe","amount":35}],
+"research":"crafter gold",
+"size":1
+"type": "GenericCrafter",
+
+    alwaysUnlocked: true
+}

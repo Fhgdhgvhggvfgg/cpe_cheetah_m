@@ -1,0 +1,9 @@
+{
+  "type": "item",
+  "name": "shield",
+  "localizedName": "shield",
+  "description": "This is a cool animated item.",
+  "transitionFrames": 0
+  "color": BA6EF7
+      alwaysUnlocked: true
+}

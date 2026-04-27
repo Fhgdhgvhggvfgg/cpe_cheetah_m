@@ -1,0 +1,10 @@
+category:liquid 
+health:180
+"name": "tude fork",
+liquidCapcacity:12
+localizedName: Lead enforced liquid router
+requirements:[cpe/3]
+research:ast_conduit_1 
+size:1
+type:LiquidRouter 
+alwaysUnlocked: true

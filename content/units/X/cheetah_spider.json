@@ -1,0 +1,115 @@
+{
+  "singleTarget": true,
+  "template": "ErekirUnitType",
+  "localizedName": "cheetah spider",
+  "drawShields": false,
+  "research": { },
+  "lightRadius": 200,
+  "type": "legs",
+  "drownTimeMultiplier": 99999999999999999999,
+  "legCount": 8,
+  "legLength": 85,
+  "legSpeed": 0.5,
+  "legExtension": -10.5,
+  "legForwardScl": 0,
+  "legMoveSpace": 0.9,
+  "legPairOffset": 2,
+  "rotateSpeed": 1.3,
+  "speed": 1,
+  "accel": 0.4,
+  "drag": 0.4,
+  "range": 670,
+  "maxRange": 670,
+  "aimDst": 340,
+  "outlineColor": "000000",
+  "faceTarget": true,
+  "flying": false,
+  "health": 40000,
+  "hitSize": 52,
+  "armor": 12,
+  "lowAltitude": true,
+  "parts": [
+    {
+      "type": "RegionPart",
+      "suffix": "-glow",
+      "layer": -1,
+      "mirror": true,
+      "blending": "additive",
+      "color": "FF0000",
+      "colorTo": "FF0000",
+      "outline": false
+    }
+  ]
+  
+  
+  abilities:[
+ 
+  {
+		type: SpawnDeathAbility
+		amount: 1
+		unit: demon_girl
+	}
+ 
+  ]
+  
+  
+  "weapons": [
+
+{
+                name: focus-rail
+                mirror: false
+                alternate: true
+                continuous: true
+                top: true
+                rotate: true
+		rotateSpeed: 0
+                x: 0
+                y: 60
+                reload: 350
+                shoot: {
+                    shots: 1
+                    shotDelay: 0
+            }
+            inaccuracy: 0
+            recoil: 0
+            shootSound: beam
+            shootEffect: none
+            bullet: {
+                type: ContinuousLaserBulletType
+                damage: 500
+                speed: 0
+                lifetime: 90
+                knockback: -1
+                backColor: FF4444
+                frontColor: FF4444
+                mixColorFrom: FF4444
+                mixColorTo: FF4444
+                width: 15
+                length: 670
+            }
+ }
+
+        {
+        name: g
+        outlineColor: 1ED91E
+        rotate: false
+        mirror: false
+        "shootY": 0,
+        x: 0
+        y: -36
+        reload: 1600
+        recoil: -9
+        ejectEffect: casing2
+        shootSound: egg
+        range: 100
+        
+            bullet: {
+      type: BasicBulletType
+        spawnUnit: egg
+       }
+    }
+
+  ]
+  
+      alwaysUnlocked: true
+}

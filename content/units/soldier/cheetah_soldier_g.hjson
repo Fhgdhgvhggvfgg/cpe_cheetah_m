@@ -1,0 +1,48 @@
+name: cheetah soldier girl
+"template": "ErekirUnitType",
+description: Cheetah girl soldier getting out of a Cheetah tank x
+type: mech 
+mechLegColor: 565666FF
+health: 210
+armor: 1
+hitSize: 20
+speed: 3
+rotateSpeed: 7
+accel: 0.15
+mechSideSway: 0.25
+itemCapacity: 12
+outlineColor: 565666FF
+weapons: [
+    {
+        name: mechanical-launcher-cannon
+        rotate: false
+        mirror: false
+        x: 0
+        y: 15
+        reload: 25
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: cannon
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 55
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 30
+                knockback: -1
+                backColor: FAE965
+                frontColor: FAE965
+                mixColorFrom: FAE965
+                mixColorTo: FAE965
+                width: 8
+                height: 8
+
+               }
+    }
+ ]
+
+
+research: dagger
+    alwaysUnlocked: true

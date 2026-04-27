@@ -1,0 +1,51 @@
+{
+alwaysUnlocked: true
+"template": "ErekirUnitType",
+alwaysUnlocked: false,
+canAttack:true,
+coreUnitDock:true,
+flying:true,
+health:600,
+hitSize: 20
+localisedName: "bolt cannon",
+speed: 6,
+rotateSpeed: 6
+"type":"flying",
+"weapons":[
+
+    {
+        rotate: false
+        mirror: false
+        x: 0
+        y: 0
+        reload: 30
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 110
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 23
+                knockback: -1
+                backColor: 1ED91E
+                frontColor: 1ED91E
+                mixColorFrom: 1ED91E
+                mixColorTo: 1ED91E
+                width: 20
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 50
+		splashDamage: 80
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: 1ED91E
+               }
+    }
+
+]
+}

@@ -1,0 +1,198 @@
+{
+"description": "A developed cheetah man rides a motorcycle and has three guns.",
+"name":"cheetah biker power",
+"type": "tank",
+"hitSize": 35,
+"crushDamage": 2,
+"template": "ErekirUnitType",
+"treadPullOffset": 6,
+"singleTarget": false,
+"omniMovement": false,
+"faceTarget": false,
+"health": 1040,
+"armor": 20,
+"speed": 3,
+"rotateSpeed": 6,
+"itemCapacity": 0,
+"outlineColor": "44413c",
+"treadRects": [
+    {
+      "x": 29,
+      "y": -84,
+      "width": 19,
+      "height": 170
+    }
+  ],
+
+abilities:[
+ 
+ {
+  type:ShieldArcAbility
+  y:0
+  radius:40
+  max: 150
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+ {
+  type:ShieldArcAbility
+  y:0
+  angleOffset:120
+  radius:40
+  max: 150
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+ {
+  type:ShieldArcAbility
+  y:0
+  angleOffset:240
+  radius:40
+  max:150
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+]
+
+
+"weapons": [
+    {
+                name: cannon_bike_power
+                mirror: false
+                top: true
+                rotate: true
+		rotateSpeed: 3
+                x: 0
+                y: 30
+                reload: 30
+                shoot: {
+                    shots: 1
+                    shotDelay: 5
+            }
+            inaccuracy: 0
+            recoil: 2
+            shootSound: cannon
+            shootEffect: none
+            bullet: {
+                type: SolidBulletType
+                damage: 40
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 27
+                knockback: -1
+                backColor: FAE965
+                frontColor: FAE965
+                mixColorFrom: FAE965
+                mixColorTo: FAE965
+                width: 10
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 10
+		splashDamage: 40
+		hitEffect: blastExplosion
+        trailLength: 15
+        trailColor: FAE965
+               }
+}
+   
+{
+                name: cannon_bike_power
+                mirror: false
+                top: true
+                rotate: true
+		rotateSpeed: 3
+                x: 30
+                y: -30
+                reload: 30
+                shoot: {
+                    shots: 1
+                    shotDelay: 5
+            }
+            inaccuracy: 0
+            recoil: 2
+            shootSound: cannon
+            shootEffect: none
+            bullet: {
+                type: SolidBulletType
+                damage: 40
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 27
+                knockback: -1
+                backColor: FAE965
+                frontColor: FAE965
+                mixColorFrom: FAE965
+                mixColorTo: FAE965
+                width: 10
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 10
+		splashDamage: 40
+		hitEffect: blastExplosion
+        trailLength: 15
+        trailColor: FAE965
+               }
+}
+   
+{
+                name: cannon_bike_power
+                mirror: false
+                top: true
+                rotate: true
+		rotateSpeed: 3
+                x: -30
+                y: -30
+                reload: 30
+                shoot: {
+                    shots: 1
+                    shotDelay: 5
+            }
+            inaccuracy: 0
+            recoil: 2
+            shootSound: cannon
+            shootEffect: none
+            bullet: {
+                type: SolidBulletType
+                damage: 40
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 27
+                knockback: -1
+                backColor: FAE965
+                frontColor: FAE965
+                mixColorFrom: FAE965
+                mixColorTo: FAE965
+                width: 10
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 10
+		splashDamage: 40
+		hitEffect: blastExplosion
+        trailLength: 15
+        trailColor: FAE965
+               }
+}
+   
+
+  ]
+  
+      alwaysUnlocked: true
+}

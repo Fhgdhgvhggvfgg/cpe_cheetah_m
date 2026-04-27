@@ -1,0 +1,321 @@
+type:payload
+flying:true
+"template": "ErekirUnitType",
+name:cheetah bolt power
+description:An upgraded cheetah girl with robotic limbs and four nuclear lights that heal units and blocks and fire nuclear bullets..
+health:2300
+speed:3
+armor:4
+"payloadCapacity": 1000,
+"hitSize":30
+rotateSpeed:4
+mineTier:4
+useEngineElevation:false
+faceTarget:true
+outlineColor:000000
+
+abilities:[
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:missileTrailShort
+  x:0
+  y:-8
+  interval:1
+  minVelocity:0.9
+ }
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:mineWallSmall
+  x:0
+  y:-15
+  interval:1
+  minVelocity:0.6
+ }
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:mineWallSmall
+  x:4
+  y:-15
+  interval:1
+  minVelocity:0.6
+ }
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:mineWallSmall
+  x:-4
+  y:-15
+  interval:1
+  minVelocity:0.6
+ }
+ 
+ {
+  type:EnergyFieldAbility
+  damage:40
+  reload:30
+  range:190
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:160
+  shootSound:spark
+  maxTargets:3
+  healPercent:30
+  x:-30
+  y:-30
+ }
+ 
+  {
+  type:EnergyFieldAbility
+  damage:40
+  reload:30
+  range:190
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:160
+  shootSound:spark
+  maxTargets:3
+  healPercent:30
+  x:30
+  y:-30
+ }
+ 
+  {
+  type:EnergyFieldAbility
+  damage:40
+  reload:30
+  range:190
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:160
+  shootSound:spark
+  maxTargets:3
+  healPercent:30
+  x:-30
+  y:30
+ }
+ 
+  {
+  type:EnergyFieldAbility
+  damage:40
+  reload:30
+  range:190
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:160
+  shootSound:spark
+  maxTargets:2
+  healPercent:30
+  x:30
+  y:30
+ }
+ 
+ {
+  type:ShieldArcAbility
+  y:0
+  radius:160
+  max:525
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+ {
+  type:ShieldArcAbility
+  y:0
+  angleOffset:120
+  radius:160
+  max:525
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+ {
+  type:ShieldArcAbility
+  y:0
+  angleOffset:240
+  radius:160
+  max:525
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+ ]
+ 
+ 
+ weapons: [
+    {
+        name: mechanical-launcher-cannon
+        rotate: true
+        mirror: false
+        x: 30
+        y: 30
+        reload: 40
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 15
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 30
+                 "collidesTeam":true,
+                "healPercent":2,
+                knockback: -1
+                backColor: 1ED91E
+                frontColor: 1ED91E
+                mixColorFrom: 1ED91E
+                mixColorTo: 1ED91E
+                width: 20
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 10
+		splashDamage: 30
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: 1ED91E
+               }
+    }
+    
+    {
+        name: mechanical-launcher-cannon
+        rotate: true
+        mirror: false
+        x: -30
+        y: 30
+        reload: 40
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 15
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 30
+                "collidesTeam":true,
+                "healPercent":2,
+                knockback: -1
+                backColor: 1ED91E
+                frontColor: 1ED91E
+                mixColorFrom: 1ED91E
+                mixColorTo: 1ED91E
+                width: 20
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 10
+		splashDamage: 30
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: 1ED91E
+               }
+    }
+    
+    {
+        name: mechanical-launcher-cannon
+        rotate: true
+        mirror: false
+        x: 30
+        y: -30
+        reload: 40
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 15
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 30
+                "collidesTeam":true,
+                "healPercent":2,
+                knockback: -1
+                backColor: 1ED91E
+                frontColor: 1ED91E
+                mixColorFrom: 1ED91E
+                mixColorTo: 1ED91E
+                width: 20
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 10
+		splashDamage: 30
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: 1ED91E
+               }
+    }
+    
+    {
+        name: mechanical-launcher-cannon
+        rotate: true
+        mirror: false
+        x: -30
+        y: -30
+        reload: 40
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 15
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 30
+                "collidesTeam":true,
+                "healPercent":2,
+                knockback: -1
+                backColor: 1ED91E
+                frontColor: 1ED91E
+                mixColorFrom: 1ED91E
+                mixColorTo: 1ED91E
+                width: 20
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 10
+		splashDamage: 30
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: 1ED91E
+               }
+    }
+    
+ ]
+ 
+
+engines:[
+ {
+  x:0
+  y:0
+  radius:5
+  rotation:-90
+ }
+]
+
+    alwaysUnlocked: true

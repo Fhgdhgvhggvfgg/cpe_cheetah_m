@@ -1,0 +1,62 @@
+{
+"type":"payload",
+alwaysUnlocked: false,
+buildRange:140,
+buildSpeed:3,
+accel: 0.06
+drag: 0.06
+ "range": 250,
+  "maxRange": 300,
+description:TTX.
+outlineColor: 00000000
+"template": "ErekirUnitType",
+hitSize: 8
+canAttack:true,
+contorller:BuilderAI,
+coreUnitDock:true,
+defaultController: BuilderAI,
+flying:true,
+health:500,
+  "engineSize": 0, 
+itemCapacity: 60,
+localisedName: "TTX",
+mineFloor:true
+mineRange: 150
+"mineSpeed":17,
+mineTier: 11
+mineWalls:true
+speed: 10,
+"rotateSpeed": 8.5,
+"payloadCapacity": 600,
+
+
+abilities:[
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 0,
+      "spawnY": -40,
+      "unit": "cpe_entity",
+      "spawnTime": 1400
+    },
+
+]
+
+weapons: [
+{
+    shooty: 8
+    reload: 20
+    alternate: false
+    recoil: 0
+    mirror: true
+    rotate: true
+    x: 0
+    y: 0
+    shootSound: bolt
+
+}
+   ]
+   
+
+
+    alwaysUnlocked: true
+}

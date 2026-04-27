@@ -1,0 +1,20 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":100, 
+"description":"produces metaglass but without using copper",
+"displayNane":"create coal",
+"consumes":{
+"items":[{"item":cpe,"amount":1}]
+}
+"health":3600,
+"itemCapacity":120,
+"name": "create coal",
+"outputItem":{"item":"coal","amount":3},
+"requirements":[{"item":"cpe","amount":50}],
+"research":"crafter gold",
+"size":3
+"type": "GenericCrafter",
+
+    alwaysUnlocked: true
+}

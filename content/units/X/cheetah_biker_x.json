@@ -1,0 +1,136 @@
+{
+"description": "A developed Cheetah man who drives a cart bike and has a machine gun. Inside the cart bike there are three riders who come out when it is destroyed.",
+"name":"cheetah biker x",
+"type": "tank",
+"hitSize": 70,
+"crushDamage": 2,
+"template": "ErekirUnitType",
+"treadPullOffset": 6,
+"singleTarget": false,
+"omniMovement": false,
+"faceTarget": false,
+"health": 4000,
+"armor": 20,
+"speed": 3,
+"rotateSpeed": 6,
+"itemCapacity": 0,
+"outlineColor": "44413c",
+"treadRects": [
+    {
+      "x": 29,
+      "y": -84,
+      "width": 19,
+      "height": 170
+    }
+  ],
+
+abilities:[
+ 
+ 
+ {
+		type: SpawnDeathAbility
+		amount: 3
+		unit: cheetah_biker
+	}
+ 
+ 
+ {
+  type:ShieldArcAbility
+  y:0
+  radius:80
+  max: 240
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+ {
+  type:ShieldArcAbility
+  y:0
+  angleOffset:120
+  radius:80
+  max: 240
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+ {
+  type:ShieldArcAbility
+  y:0
+  angleOffset:240
+  radius:80
+  max:240
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+]
+
+
+"weapons": [
+    {
+                name: cannon_bike_x
+                mirror: false
+                top: true
+                rotate: true
+		rotateSpeed: 5
+                x: 0
+                y: -20
+                reload: 250
+                
+                
+                shoot: {
+      shots: 50
+      shotDelay: 3
+    }
+    bullet: {
+      type: BasicBulletType
+      speed: 8
+      trailColor: ffffff
+      frontColor: ff0000
+      backColor: ff0000
+      lifetime: 70
+      damage: 70
+      width: 10
+      height: 15
+      trailWidth: 1
+      trailLength: 4
+      pierce: true
+      shrinkX: 0
+      shrinkY: 0
+      fragBullets: 10
+      fragSpread: 60
+      fragRandomSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragBullet: {
+      type: LightningBulletType
+          lightningColor: ff0000
+          lightningLength: 10
+          lightningDamage: 60
+          hitSound: spark
+          despawnSound: spark
+          lifetime: 1
+    }
+}
+                
+}
+ 
+
+   
+
+
+  ]
+  
+      alwaysUnlocked: true
+}

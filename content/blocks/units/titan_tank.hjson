@@ -1,0 +1,37 @@
+{
+researchCostMultiplier: 0.5
+type: UnitAssembler
+name: Titan tank
+description:tank building factory.
+size: 5
+category: units
+droneType: assembly-drone
+dronesCreated: 4
+droneConstructTime: 80
+research: slavo
+requirements: [
+ 
+  cpe_fund/6
+]
+plans: [
+{
+    type: AssemblerUnitPlan
+    unit: tank_bolt
+    requirements: [
+    cpe-cheetah-cpe_power/20
+    cpe-cheetah-cheetah_bolt/1
+    cpe-cheetah-cheetah_biker/1
+    cpe-cheetah-sara/1
+    cpe-cheetah-drill_double/25
+    ]
+    time: 3000
+  }
+]
+squareSprite: flase
+consumes: {
+  power: 1
+
+}
+areaSize: 20
+      alwaysUnlocked: true
+}

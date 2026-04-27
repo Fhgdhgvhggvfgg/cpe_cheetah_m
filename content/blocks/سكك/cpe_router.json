@@ -1,0 +1,15 @@
+{
+  "name": "cpe router",
+  "description": "real item capacity is always 1 for all routers. There is no use to change itemCapacity",
+  "type": "Router",
+  "dumpTime": 1,
+  "speed": 0,
+  "health": 300,
+  "itemCapacity": 200,
+  "size": 1,
+  "requirements": [{"item":"cpe","amount":4}]
+  "category": "distribution",
+  "research": "aega_junction",
+  
+  alwaysUnlocked: true
+}

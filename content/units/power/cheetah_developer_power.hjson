@@ -1,0 +1,71 @@
+type:payload
+flying:true
+"lowAltitude": true,
+name:cheetah developer power
+description:Cheetah is a better level upgrader who can upgrade his vehicle and repair other blocksIts vehicle also deploys auxiliary vehicles that repair the blocks..
+"template": "ErekirUnitType",
+accel: 0.06
+drag: 0.06
+health:3400
+speed:3.5
+armor:4
+"payloadCapacity": 0,
+"hitSize":68
+rotateSpeed:4
+useEngineElevation:false
+faceTarget:true
+commands: [move, repair, assist]
+outlineColor:000000
+
+abilities:[
+    
+    
+    {
+        "type": "UnitSpawnAbility"
+        "unit": "reformer"
+        "spawnTime": 600
+        "spawnBehavior": "assist"
+    }
+
+]
+
+weapons: [
+
+    {
+        name: cannon_lazer_power
+        outlineColor: 1ED91E
+        rotate: true
+        mirror: true
+        "shootY": 17,
+        x: 24
+        y: 24
+        "baseRotation": 0.0, 
+      "rotationLimit": 70.0, 
+        reload: 50
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+        
+    bullet: {
+      type: LaserBulletType
+        length: 240
+        width: 8
+        damage: 240
+        hitEffect: lightningShoot
+        shootEffect: lightningShoot
+        "collidesTeam":true,
+    "healPercent":7,
+        colors: [
+          8DEEEB
+          8DEEEB
+          FFFFFF
+        ],
+        sideAngle: -45
+        sideLength: 30
+        sideWidth: 3.4
+    }
+    }
+    
+    
+ ]
+     alwaysUnlocked: true

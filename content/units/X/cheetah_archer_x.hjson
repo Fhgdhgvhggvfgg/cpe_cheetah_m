@@ -1,0 +1,87 @@
+name: queen cheetah archer
+description: Cheetah is a powerful archer queen who shoots mighty arrows and summons other archers to battle.
+type: mech 
+mechLegColor: 565666FF
+health: 4400
+"template": "ErekirUnitType",
+armor: 1
+hitSize: 25
+stepShake: 0
+speed: 3
+rotateSpeed: 7
+accel: 0.15
+mechSideSway: 0.25
+itemCapacity: 12
+outlineColor: 87CEEB
+
+abilities: [
+
+ {
+		type: SpawnDeathAbility
+		amount: 1
+		unit: cheetah_archer_x_die
+	}
+	
+	]
+
+weapons: [
+    {
+        name: mechanical-launcher-cannon
+        rotate: false
+        mirror: false
+        x: 0
+        y: 9
+        reload: 55
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+            shoot: {
+      shots: 1
+      shotDelay: 5
+    }
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 1800
+                homing: false
+                speed: 9
+                sprite: large-bomb
+                lifetime: 60
+                knockback: -1
+                backColor: FAE965
+                frontColor: FAE965
+                mixColorFrom: FAE965
+                mixColorTo: FAE965
+                width: 30
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 160
+		splashDamage: 1000
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: FAE965
+               }
+    }
+    
+    
+       {
+   name: spawn_archer
+    x: -40
+    y: 0
+    reload: 240
+     "heatTime": 90,
+       "heatColor": "FFFFFF",
+    alternate: true
+    shooty: 0
+    mirror: true
+    rotate: false
+    shootSound: call
+            bullet: {
+      type: BasicBulletType
+        spawnUnit: cheetah_archer
+       }
+}
+ ]
+
+    alwaysUnlocked: true

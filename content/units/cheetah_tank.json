@@ -1,0 +1,77 @@
+{
+"description": "big russian tonk",
+"template": "ErekirUnitType",
+"name":"cheetah tank",
+"type": "tank",
+"hitSize": 35,
+"crushDamage": 2,
+"treadPullOffset": 6,
+"singleTarget": false,
+"omniMovement": false,
+"faceTarget": false,
+"health": 2100,
+"armor": 20,
+"speed": 1.5,
+"rotateSpeed": 3,
+"itemCapacity": 0,
+"outlineColor": "44413c",
+"treadRects": [
+    {
+      "x": 29,
+      "y": -84,
+      "width": 19,
+      "height": 170
+    }
+  ],
+
+
+"weapons": [
+    {
+                name: cannon_tank
+                mirror: false
+                top: true
+                rotate: true
+		rotateSpeed: 3
+                x: 0
+                y: -15
+                reload: 60
+                shoot: {
+                    shots: 1
+                    shotDelay: 5
+            }
+            inaccuracy: 0
+            recoil: 2
+            shootSound: cannon
+            shootEffect: none
+            bullet: {
+                type: SolidBulletType
+                damage: 75
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 30
+                knockback: -1
+                backColor: FAE965
+                frontColor: FAE965
+                mixColorFrom: FAE965
+                mixColorTo: FAE965
+                width: 10
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 28
+		splashDamage: 65
+		hitEffect: blastExplosion
+        trailLength: 15
+        trailColor: FAE965
+               }
+}
+   
+
+  ]
+  
+    "loopSound": "engine",
+  "loopSoundVolume": 0.6, 
+  
+      alwaysUnlocked: true
+}

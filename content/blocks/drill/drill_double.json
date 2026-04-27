@@ -1,0 +1,25 @@
+{
+  "name": "drill double",
+  "description": "Huge drill that drills with great power",
+"health": 1400,  
+"type": "Drill",
+  "size": 4,
+  "tier": 5,
+  "itemCapacity": 40,
+  "drillTime": 174,
+  "hasPower": false,
+  "powerConsumes": 2,
+  "drawMineItem": false,
+  "consumes": {
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.02,
+      "optional": true,
+      "booster": true
+    }
+  },
+  "requirements": [{"item":"cpe_fund","amount":2}],
+  "category": "production",
+  "research": "lead_e_pndr_1"
+      alwaysUnlocked: true
+}

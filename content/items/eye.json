@@ -1,0 +1,9 @@
+{
+  "type": "item",
+  "name": "eye",
+  "localizedName": "eye",
+  "description": "This is a cool animated item.",
+  "transitionFrames": 0
+  "color": 17A0E1
+      alwaysUnlocked: true
+}

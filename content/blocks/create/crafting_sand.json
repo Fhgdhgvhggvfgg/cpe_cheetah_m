@@ -1,0 +1,21 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":30, 
+"description":"A sand pile exposed to an electric current causes it to multiply in number.",
+"displayNane":"crafting sand",
+"consumes":{
+    "power": 1, 
+"items":[]
+}
+"health":3600,
+"itemCapacity":40,
+"name": "craftin sand",
+"outputItem":{"item":"sand","amount":1},
+"requirements":[{"item":"cpe","amount":40}],
+"research":"crafter sand",
+"size":4
+"type": "GenericCrafter",
+
+  "alwaysUnlocked": true,
+}

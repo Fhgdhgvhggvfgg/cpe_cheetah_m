@@ -1,0 +1,9 @@
+{
+  "type": "item",
+  "name": "cpe",
+  "localizedName": "cpe fund",
+  "description": "Pack of 100 cpe",
+  "transitionFrames": 0
+  "color": 16C2C2
+      alwaysUnlocked: true
+}

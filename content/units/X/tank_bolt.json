@@ -1,0 +1,209 @@
+{
+"description": "big russian tonk",
+"name":"cheetah bolt",
+"template": "ErekirUnitType",
+"type": "tank",
+"hitSize": 50,
+"crushDamage": 2,
+"treadPullOffset": 6,
+"singleTarget": false,
+"omniMovement": false,
+"faceTarget": false,
+"health": 30000,
+"armor": 20,
+"speed": 1.8,
+"rotateSpeed": 3.5,
+"itemCapacity": 0,
+"outlineColor": "44413c",
+mineFloor:true
+mineRange: 60
+"mineSpeed":52,
+mineTier: 10
+itemCapacity: 480,
+mineWalls:true
+"treadRects": [
+    {
+      "x": 29,
+      "y": -84,
+      "width": 19,
+      "height": 170
+    }
+  ],
+
+  "abilities": [
+ 
+ 
+ {
+	"type": "mindustry.entities.abilities.ForceFieldAbility",
+	"radius": 100,
+	"regen": 4,
+	"max": 1400,
+	"cooldown": 380
+ 
+ }
+ 
+ 
+   {
+  type:EnergyFieldAbility
+  damage:180
+  reload:30
+  range:230
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:160
+  shootSound:spark
+  maxTargets:3
+  healPercent:50
+  x: 50
+  y: -25
+ }
+ 
+    {
+  type:EnergyFieldAbility
+  damage:180
+  reload:30
+  range:230
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:160
+  shootSound:spark
+  maxTargets:3
+  healPercent:50
+  x: -50
+  y: -25
+ }
+ 
+    {
+  type:EnergyFieldAbility
+  damage:180
+  reload:30
+  range:230
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:160
+  shootSound:spark
+  maxTargets:3
+  healPercent:50
+  x: 0
+  y: 50
+ }
+ 
+  ],
+
+
+"weapons": [
+    {
+                name: tank_bolt_cannon
+                mirror: false
+                top: true
+                rotate: true
+		rotateSpeed: 3
+                x: 0
+                y: 0
+                reload: 40
+                shoot: {
+                    shots: 1
+                    shotDelay: 5
+            }
+            inaccuracy: 0
+            recoil: 0
+            shootSound: bolt
+            shootEffect: none
+            bullet: {
+                type: SolidBulletType
+                damage: 1400
+                homing: false
+                speed: 14
+                sprite: large-bomb
+                lifetime: 30
+                knockback: -1
+                backColor: FAE965
+                frontColor: FAE965
+                mixColorFrom: FAE965
+                mixColorTo: FAE965
+                width: 10
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 70
+		splashDamage: 900
+		hitEffect: blastExplosion
+        trailLength: 15
+        trailColor: FAE965
+               }
+}
+   
+{
+                name: tank_bolt_fire
+                mirror: true
+                top: true
+                "shootY": 15,
+                rotate: true
+		rotateSpeed: 3
+                x: 15
+                y: -15
+                reload: 2
+                shoot: {
+                    shots: 1
+                    shotDelay: 5
+            }
+            inaccuracy: 0
+            recoil: 0
+            shootSound: flame
+            shootEffect: none
+      	bullet: {
+		"type": "BasicBulletType",
+		"collidesAir": true,
+		"speed": 5,
+		"damage": 90,
+		"width": 0.1,
+		"height": 0.1,
+		
+		shootEffect: {
+			"type": "ParticleEffect",
+			"particles": 40,
+			"sizeFrom": 8,
+			"sizeTo": 0,
+			"length": 600,
+			"lifetime": 90,
+			"interp": "circleOut",
+			"lightColor": "FF5845FF",
+			"colorFrom": "FFDCD8FF",
+			"colorTo": "FF5845FF",
+			"cone": 10
+		}
+		
+		"smokeEffect": "none",
+		"lifetime": 50,
+		"despawnEffect": "none",
+		"hittable": false,
+		"reflectable": false,
+		
+		hitEffect: {
+			"type": "ParticleEffect",
+			"line": true,
+			"particles": 5,
+			"lifetime": 60,
+			"interp": "circleOut",
+			"length": 50,
+			"cone": -30,
+			"lenFrom": 5,
+			"lenTo": 0,
+			"colorFrom": "FF5845FF",
+			"colorTo": "FF5845FF"
+		}
+		
+		"pierce": true,
+		"incendAmount": 5
+	}
+}
+   
+
+
+  ]
+  
+      alwaysUnlocked: true
+}

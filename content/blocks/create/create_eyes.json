@@ -1,0 +1,21 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":330, 
+"description":"produces metaglass but without using copper",
+"displayNane":"create eyes",
+"consumes":{
+power: 2
+"items":[{"item":graphite,"amount":35}]
+}
+"health":3600,
+"itemCapacity":160,
+"name": "create eyes",
+"outputItem":{"item":"eye","amount":1},
+"requirements":[{"item":"cpe","amount":350}],
+"research":"crafter gold",
+"size":2
+"type": "GenericCrafter",
+
+    alwaysUnlocked: true
+}

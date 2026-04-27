@@ -1,0 +1,9 @@
+{
+  "type": "item",
+  "name": "scale",
+  "localizedName": "scale",
+  "description": "This is a cool animated item.",
+  "transitionFrames": 0
+  "color": 1ED91E
+      alwaysUnlocked: true
+}

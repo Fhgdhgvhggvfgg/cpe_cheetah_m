@@ -1,0 +1,48 @@
+{
+  type: "Reconstructor"
+  size: 9
+  constructTime: 3000
+  name: development
+  consumes: {
+    power: 5
+     items: [
+     {"item":"cpe_fund","amount":30},
+      ]
+  }
+  requirements: [
+     {"item":"cpe_fund","amount":23},
+    ]
+  upgrades: [
+    
+    [
+    cheetah_biker_power
+    cheetah_biker_x
+    ]
+    
+    [
+    cheetah_archer_power
+    cheetah_archer_x
+    ]
+    
+      
+    [
+    cheetah_bolt_power
+    cheetah_bolt_x
+    ]
+    
+        [
+    cheetah_tank_power
+    cheetah_tank_x
+    ]
+    
+    [
+     cheetah_developer_power
+    cheetah_developer_x
+    ]
+    
+  ]
+    alwaysUnlocked: true
+  category: units
+  research: development level 2
+}
+

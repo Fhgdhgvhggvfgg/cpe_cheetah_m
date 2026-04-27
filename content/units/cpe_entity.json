@@ -1,0 +1,16 @@
+{
+alwaysUnlocked: true
+"template": "ErekirUnitType",
+canAttack:false,
+lifetime: 1200
+"outlineColor": "00000000",
+coreUnitDock:true,
+flying:true,
+health:600,
+hitSize: 10
+localisedName: "cpe entity",
+speed: 6,
+rotateSpeed: 0
+"type":"missile",
+"engineSize": 0, 
+}

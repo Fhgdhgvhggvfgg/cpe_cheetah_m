@@ -1,0 +1,12 @@
+category:power
+description:"power node made with cpe" 
+health:220
+laserRange:24
+localizedName:"cpe node" 
+maxNodes:20
+requirements:[{"item":"cpe","amount":27}]
+research:cpe
+type:PowerNode
+ planet: "serpulo"
+ 
+       alwaysUnlocked: true

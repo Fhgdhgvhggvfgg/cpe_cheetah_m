@@ -1,0 +1,62 @@
+description: Cheetah pilots a massive cannon with a powerful range that destroys enemies with its powerful strike. Copper ammunition is medium-powered. CPE ammunition is capable of destroying any force in its path with a more powerful explosion.
+name: sara
+type: ItemTurret
+reload: 16
+rotateSpeed: 5
+targetGround: true
+targetAir: true
+range: 450
+recoil: 2
+shootSound: bang
+size: 6
+health: 7000
+AmmoPerShot: 5
+coolant: {
+  type: ConsumeCoolant
+  allowGas: true
+  allowLiquid: true
+  amount: 0.3
+}
+
+
+ammoTypes: {
+    copper: {
+        damage: 230
+        speed: 16
+        height: 24
+        width: 24
+        lifetime: 30
+        fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 20
+		splashDamage: 190
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: FAE965
+    }
+    
+        cpe: {
+        damage: 900
+        speed: 16
+        height: 24
+        width: 24
+        lifetime: 30
+        fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 50
+		splashDamage: 660
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: FAE965
+    }
+    
+
+}
+requirements: [
+cpe_fund/23
+]
+category: turret
+parent: slavo
+research: slavo
+
+    alwaysUnlocked: true

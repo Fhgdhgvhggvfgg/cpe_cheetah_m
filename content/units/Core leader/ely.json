@@ -1,0 +1,87 @@
+{
+"type":"payload",
+alwaysUnlocked: false,
+buildRange:290,
+buildSpeed:15,
+accel: 0.06
+drag: 0.06
+"rotateSpeed": 8.5,
+  "engineSize": 0, 
+
+"template": "ErekirUnitType",
+hitSize: 26
+canAttack:true,
+contorller:BuilderAI,
+coreUnitDock:true,
+defaultController: BuilderAI,
+flying:true,
+health:2800,
+itemCapacity: 260,
+localisedName: "ely",
+mineFloor:true
+mineRange: 270
+"mineSpeed":18,
+mineTier: 11
+mineWalls:true
+speed: 8,
+"payloadCapacity": 1500,
+
+
+abilities:[
+
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 0,
+      "spawnY": -40,
+      "unit": "cpe_entity",
+      "spawnTime": 2700
+    },
+
+]
+
+
+weapons: [
+
+    {
+        name: light_cannon
+        rotate: true
+        mirror: true
+        x: 30
+        y: -18
+        reload: 10
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: flame
+        
+        bullet: {
+      type: BasicBulletType
+        sprite: circle-bullet
+        lightRadius: 6
+        lightColor: FF7436FF
+        damage: 50
+        scaleVelocity: true
+        splashDamage: 20
+        splashDamageRadius: 30
+        height: 7.5
+        width: 7.5
+        speed: 6
+        lifetime: 30
+        shrinkX: 0
+        shrinkY: 0
+        trailChance: 1
+        trailParam: 10
+        trailLength: 19
+        trailColor: FF7436FF
+     
+        
+       }
+    }
+    
+
+]
+
+    "loopSound": "music_lader",
+  "loopSoundVolume": 2, 
+  
+    alwaysUnlocked: true
+}

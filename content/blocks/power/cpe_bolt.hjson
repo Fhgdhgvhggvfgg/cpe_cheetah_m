@@ -1,0 +1,23 @@
+Name: cpe bolt
+description: Element-powered CPE element.
+type: ConsumeGenerator
+size: 1
+health: 200
+hasItems: true
+hasLiquids: true
+hasPower: true
+liquidCapacity: 25
+itemDuration: 600
+powerProduction: 2
+itemCapacity:20
+consumes: {
+     items: [
+     {"item":"cpe","amount":1},
+      ]
+}
+requirements: [
+cpe/45
+]
+category: power
+
+      alwaysUnlocked: true

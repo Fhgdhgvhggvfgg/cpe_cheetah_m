@@ -1,0 +1,69 @@
+{
+alwaysUnlocked: true
+"template": "ErekirUnitType",
+alwaysUnlocked: false,
+canAttack:true,
+coreUnitDock:true,
+flying:true,
+defaultCommand: repair
+buildRange:90,
+buildSpeed:0.3,
+health:230,
+hitSize: 10
+localisedName: "reformer",
+speed: 6,
+rotateSpeed: 6
+"type":"flying",
+
+abilities:[
+
+]
+
+"weapons":[
+
+	{
+      "type": "RepairBeamWeapon",
+      "name": "repair-point",
+      "mirror": "false",
+      "x": 0,
+      "y": 6,
+      "beamWidth": 0.8,
+      "repairSpeed": 0.5,
+      "bullet": {
+        "maxRange": 150
+      }
+    },
+
+    {
+        rotate: false
+        mirror: false
+        x: 0
+        y: 0
+        reload: 30
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 24
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 20
+                "collidesTeam":true,
+                "healPercent":7,
+                knockback: -1
+                backColor: 1ED91E
+                frontColor: 1ED91E
+                mixColorFrom: 1ED91E
+                mixColorTo: 1ED91E
+                width: 10
+                height: 10
+
+               }
+    }
+
+]
+alwaysUnlocked: true
+}

@@ -1,0 +1,71 @@
+{
+  "type": "LogicDisplay",
+  "name": "large-logic-display",
+  "description": "A larger display for showing information from processors. Use [stat]drawflush[] to display things.
+
+unit names:
+
+@cpe-cheetah-ely
+@cpe-cheetah-alix
+@cpe-cheetah-alven
+@cpe-cheetah-ema
+
+@cpe-cheetah-cheetah_bolt
+@cpe-cheetah-cheetah_archer
+@cpe-cheetah-cheetah_developer
+@cpe-cheetah-cheetah_tank
+@cpe-cheetah-cheetah_biker
+
+@cpe-cheetah-cheetah_bolt_power
+@cpe-cheetah-cheetah_archer_power
+@cpe-cheetah-cheetah_developer_power
+@cpe-cheetah-cheetah_tank_power
+@cpe-cheetah-cheetah_biker_power
+
+@cpe-cheetah-cheetah_bolt_x
+@cpe-cheetah-cheetah_bolt_x_die
+@cpe-cheetah-cheetah_archer_x
+@cpe-cheetah-cheetah_archer_x_die
+@cpe-cheetah-cheetah_developer_x
+@cpe-cheetah-cheetah_developer_x_end
+@cpe-cheetah-cheetah_tank_x
+@cpe-cheetah-cheetah_biker_x
+
+@cpe-cheetah-reformer
+@cpe-cheetah-bolt-cannon
+@cpe-cheetah-cheetah_soldier_m
+@cpe-cheetah-cheetah_soldier_g
+@cpe-cheetah-cpe_entity
+@cpe-cheetah-egg
+@cpe-cheetah-spider
+@cpe-cheetah-TTX
+
+@cpe-cheetah-tank_bolt
+@cpe-cheetah-queen_cheetah_mermaid
+@cpe-cheetah-guard_cheetah_mermaid
+@cpe-cheetah-crown
+@cpe-cheetah-narzo
+@cpe-cheetah-cheetah_spider
+@cpe-cheetah-demon_girl
+
+@cpe-cheetah-firefighter
+@cpe-cheetah-cheetah_freighter
+@cpe-cheetah-cheetah_miner
+@cpe-cheetah-cheetah_engine
+
+",
+  "size": 10,
+  "alwaysUnlocked": true
+  "health": 400,
+  "displaySize": 320,
+  "maxInstructions": 300,
+  "requirements": [
+    {
+      "item": "cpe",
+      "amount": 45
+    },
+  ],
+  "category": "logic",
+
+  "env": 1
+}

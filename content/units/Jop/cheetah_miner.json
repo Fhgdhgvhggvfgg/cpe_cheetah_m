@@ -1,0 +1,20 @@
+{
+"canMine":true,
+"description":"the alapha that has no attacking capabilities"
+"flying":true,
+"hitSize":30,
+"health":680,
+"itemCapacity":25,
+"lowAltitude":true,
+"localizedName":"cheetah miner",
+"mineFloor":true,
+"mineRange":100,
+"mineSpeed":2,
+"template": "ErekirUnitType",
+"mineTier":11,
+"mineWalls":true,
+"research":"astr_default_wf_gree_1",
+"speed":3,
+"weapons":[]
+    alwaysUnlocked: true
+}

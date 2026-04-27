@@ -1,0 +1,28 @@
+Name: cpe power
+description: Element-powered CPE element.
+type: ConsumeGenerator
+size: 2
+health: 800
+hasItems: true
+hasLiquids: true
+hasPower: true
+liquidCapacity: 25
+itemDuration: 670
+powerProduction: 10
+itemCapacity:80
+consumes: {
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.1
+    }
+     items: [
+     {"item":"cpe","amount":3},
+     {"item":"silicon","amount":1},
+      ]
+}
+requirements: [
+cpe/300
+]
+category: power
+
+      alwaysUnlocked: true

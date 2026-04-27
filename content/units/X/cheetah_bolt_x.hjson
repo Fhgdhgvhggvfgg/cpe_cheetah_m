@@ -1,0 +1,309 @@
+type:payload
+flying:true
+"template": "ErekirUnitType",
+name:cheetah bolt x
+description:A developed Cheetah girl who has robotic limbs and four powerful cannons and fires fiery laser beams. When she dies, her cannons are free to attack and her corpse fires her last strike and dies..
+health:4000
+speed:3
+armor:4
+"payloadCapacity": 1600,
+"hitSize":30
+rotateSpeed:4
+mineTier:4
+useEngineElevation:false
+faceTarget:true
+outlineColor:000000
+
+abilities: [
+{
+	"type": "mindustry.entities.abilities.ForceFieldAbility",
+	"radius": 100,
+	"regen": 4,
+	"max": 360,
+	"cooldown": 380
+ 
+ }
+ {
+		type: SpawnDeathAbility
+		amount: 1
+		unit: cheetah_bolt_x_die
+	}
+ 
+{
+		type: SpawnDeathAbility
+		amount: 4
+		unit: bolt-cannon
+	}
+ 
+	
+
+
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:missileTrailShort
+  x:0
+  y:-8
+  interval:1
+  minVelocity:0.9
+ }
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:mineWallSmall
+  x:0
+  y:-15
+  interval:1
+  minVelocity:0.6
+ }
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:mineWallSmall
+  x:4
+  y:-15
+  interval:1
+  minVelocity:0.6
+ }
+ {
+  type:MoveEffectAbility
+  teamColor:true
+  effect:mineWallSmall
+  x:-4
+  y:-15
+  interval:1
+  minVelocity:0.6
+ }
+ 
+ {
+  type:EnergyFieldAbility
+  damage:180
+  reload:30
+  range:230
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:160
+  shootSound:spark
+  maxTargets:3
+  healPercent:50
+  x:-30
+  y:-30
+ }
+ 
+  {
+  type:EnergyFieldAbility
+  damage:180
+  reload:30
+  range:230
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:160
+  shootSound:spark
+  maxTargets:3
+  healPercent:50
+  x:30
+  y:-30
+ }
+ 
+  {
+  type:EnergyFieldAbility
+  damage:180
+  reload:30
+  range:230
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:160
+  shootSound:spark
+  maxTargets:3
+  healPercent:50
+  x:-30
+  y:30
+ }
+ 
+  {
+  type:EnergyFieldAbility
+  damage:180
+  reload:30
+  range:230
+  effectRadius:1.5
+  damageEffect:chainLightning
+  status:electrified
+  statusDuration:160
+  shootSound:spark
+  maxTargets:2
+  healPercent:50
+  x:30
+  y:30
+ }
+ 
+ {
+  type:ShieldArcAbility
+  y:0
+  radius:160
+  max:700
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+ {
+  type:ShieldArcAbility
+  y:0
+  angleOffset:120
+  radius:160
+  max:700
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+ {
+  type:ShieldArcAbility
+  y:0
+  angleOffset:240
+  radius:160
+  max:700
+  regen:0.6
+  cooldown:320
+  width:3
+  angle:120
+  color:84f491
+  whenShooting:false
+ }
+ ]
+ 
+ 
+ weapons: [
+ 
+ {
+                name: focus-rail
+                mirror: false
+                alternate: true
+                continuous: true
+                top: true
+                rotate: true
+		rotateSpeed: 0
+                x: 0
+                y: 20
+                reload: 100
+                shoot: {
+                    shots: 1
+                    shotDelay: 0
+            }
+            inaccuracy: 0
+            recoil: 0
+            shootSound: beam
+            shootEffect: none
+            bullet: {
+                type: ContinuousLaserBulletType
+                damage: 265
+                speed: 0
+                lifetime: 20
+                knockback: -1
+                backColor: FF4444
+                frontColor: FF4444
+                mixColorFrom: FF4444
+                mixColorTo: FF4444
+                width: 10
+                length: 520
+            }
+ }
+ 
+    {
+        name: bolt-cannon
+        rotate: true
+        mirror: true
+        x: 30
+        y: 30
+        reload: 15
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 110
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 50
+                 "collidesTeam":true,
+                "healPercent":6,
+                knockback: -1
+                backColor: 1ED91E
+                frontColor: 1ED91E
+                mixColorFrom: 1ED91E
+                mixColorTo: 1ED91E
+                width: 20
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 50
+		splashDamage: 80
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: 1ED91E
+               }
+    }
+    
+
+    
+    {
+        name: bolt-cannon
+        rotate: true
+        mirror: true
+        x: 30
+        y: -30
+        reload: 15
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 110
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 50
+                "collidesTeam":true,
+                "healPercent":6,
+                knockback: -1
+                backColor: 1ED91E
+                frontColor: 1ED91E
+                mixColorFrom: 1ED91E
+                mixColorTo: 1ED91E
+                width: 20
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 50
+		splashDamage: 80
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: 1ED91E
+               }
+    }
+    
+
+    
+ ]
+ 
+
+engines:[
+ {
+  x:0
+  y:0
+  radius:5
+  rotation:-90
+ }
+]
+
+    alwaysUnlocked: true

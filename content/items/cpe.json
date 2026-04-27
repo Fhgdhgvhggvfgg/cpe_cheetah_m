@@ -1,0 +1,11 @@
+{
+  "type": "item",
+  "name": "cpe",
+  "localizedName": "cpe",
+  "description": "An advanced element that makes the strongest equipment.",
+  "frames": 8,
+  "frameTime": 10,
+  "transitionFrames": 0
+  "color": 17E1E1
+      alwaysUnlocked: true
+}

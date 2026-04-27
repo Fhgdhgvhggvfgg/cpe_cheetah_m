@@ -1,0 +1,36 @@
+{
+name: "cpe cheetah"
+description: 
+''' 
+Make the cheetah fight fiercely
+'''
+author: "keven"
+minGameVersion: 145
+version: "1.0"
+displayName: "cpe cheetah"
+subtitle: "cheetah mindustry"
+
+
+  "content": [
+    {
+      "type": "Mindustry.UI.TextureRegion",
+      "name": "background-custom",
+      "file": "ggg.png",
+      "region": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 768
+      }
+    }
+  ],
+  "patches": [
+    {
+      "target": "Mindustry.UI.MindustryUI",
+      "method": "drawBackground",
+      "patchType": "replace",
+      "replace": "ui.background(Core.atlas.find(\"background-custom\"));"
+    }
+  ]
+}
+

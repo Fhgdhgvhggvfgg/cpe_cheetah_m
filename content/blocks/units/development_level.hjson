@@ -1,0 +1,47 @@
+{
+  type: "Reconstructor"
+  size: 7
+  constructTime: 1000
+  name: development
+  consumes: {
+    power: 2
+     items: [
+     {"item":"cpe","amount":350},
+      ]
+  }
+  requirements: [
+     {"item":"cpe","amount":300},
+    ]
+  upgrades: [
+    
+    [
+    cheetah_biker
+    cheetah_biker_power
+    ]
+    
+    [
+    cheetah_archer
+    cheetah_archer_power
+    ]
+    
+      
+    [
+    cheetah_bolt
+    cheetah_bolt_power
+    ]
+    
+        [
+    cheetah_tank
+    cheetah_tank_power
+    ]
+    
+    [
+    cheetah_developer
+    cheetah_developer_power
+    ]
+    
+  ]
+  category: units
+  research: Solarion-constructor
+      alwaysUnlocked: true
+}

@@ -1,0 +1,19 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":190, 
+"description":"primitive coin lab",
+"displayNane":"crafting cpe silicon",
+"consumes":{
+"items":[{"item":"silicon","amount":2}]
+}
+"health":3,
+"itemCapacity":20,
+"name": "crafting coins",
+"outputItem":{"item":"cpe","amount":1},
+"requirements":[{"item":"cpe","amount":0}],
+"size":1
+"type": "GenericCrafter",
+
+  "alwaysUnlocked": true,
+}

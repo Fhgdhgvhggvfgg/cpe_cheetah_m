@@ -1,0 +1,15 @@
+{
+  "buildCostMultiplier": 0.70
+  "type": "SolarGenerator",
+  "name": "cpe sp",
+  "description": "Less efficient than other solar panels. But it is essential on Asteroid planet and many other planets that allows landing to adjacent fields",
+  "health": 2250,
+  "size": 6,
+  "hasPower": true,
+  "hasLiquids": false,
+  "powerProduction": 3,
+  "requirements": [{"item": "cpe","amount": 130}],
+  "category": "power",
+  "research": "lead_sp_5"
+      alwaysUnlocked: true
+}

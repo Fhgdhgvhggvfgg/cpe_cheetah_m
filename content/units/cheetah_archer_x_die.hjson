@@ -1,0 +1,60 @@
+name: queen cheetah archer die
+description: Cheetah girl, a queen archer, in her final moments of battle, fought to her last breath and died with dignity.
+type: mech 
+mechLegColor: 565666FF
+health: 2400
+"template": "ErekirUnitType",
+armor: 1
+hitSize: 25
+speed: 0
+rotateSpeed: 7
+accel: 0.15
+mechSideSway: 0.25
+itemCapacity: 12
+outlineColor: 87CEEB
+
+ 
+
+weapons: [
+    {
+        name: mechanical-launcher-cannon
+        rotate: false
+        mirror: false
+        shootStatus: hits_same
+        x: 0
+        y: 9
+        reload: 55
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+            shoot: {
+      shots: 1
+      shotDelay: 5
+    }
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 800
+                homing: false
+                speed: 9
+                sprite: large-bomb
+                lifetime: 50
+                knockback: -1
+                backColor: FAE965
+                frontColor: FAE965
+                mixColorFrom: FAE965
+                mixColorTo: FAE965
+                width: 30
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 160
+		splashDamage: 500
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: FAE965
+               }
+    }
+ ]
+
+    alwaysUnlocked: true

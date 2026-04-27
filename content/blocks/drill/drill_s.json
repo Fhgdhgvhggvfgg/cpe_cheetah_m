@@ -1,0 +1,26 @@
+{
+  "type": "BeamDrill",
+  "name": "drill s",
+  "description": "twice as efficeint as the small lead plasma bore",
+"health": 600,  
+"size": 1,
+  "category": "production",
+  "research": "copper_extractor",
+  "requirements": [{"item":"cpe","amount":38}],
+  "tier": 3,
+  "range": 8,
+  "drillTime": 95,
+  "fogRadius": 2,
+  
+  "consumes": {
+    "power": 0.375,
+    "liquid": {
+       "liquid": "water",
+      "amount": 0.0014,
+      "optional": true,
+      "booster": true
+    }
+  }
+  
+  alwaysUnlocked: true
+} 

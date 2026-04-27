@@ -1,0 +1,5 @@
+damage: 6
+speedMultiplier: 1
+reloadMultiplier: 1
+
+    alwaysUnlocked: true

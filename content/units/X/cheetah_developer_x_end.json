@@ -1,0 +1,74 @@
+{
+alwaysUnlocked: true
+name:cheetah developer end
+"template": "ErekirUnitType",
+canAttack:true,
+  "range": 200,
+  "maxRange": 200,
+coreUnitDock:true,
+description: The final battle stance. The Developer Cheetah's vehicle crashes, and the wreckage merges with his body as he engages in his final fight against the enemies.
+flying:true,
+health:3400,
+hitSize: 20
+localisedName: "bolt cannon",
+speed: 6,
+rotateSpeed: 6
+"type":"flying",
+"weapons":[
+
+        {
+        outlineColor: 1ED91E
+        rotate: false
+        mirror: true
+        "shootY": 17,
+        x: 4.5
+        y: 0
+        "baseRotation": 0.0, 
+      "rotationLimit": 70.0, 
+        reload: 20
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+        
+    bullet: {
+      type: LaserBulletType
+        length: 390
+        width: 8
+        damage: 230
+        hitEffect: lightningShoot
+        shootEffect: lightningShoot
+        "collidesTeam":true,
+    "healPercent":7,
+        colors: [
+          8DEEEB
+          8DEEEB
+          FFFFFF
+        ],
+        sideAngle: -45
+        sideLength: 30
+        sideWidth: 3.4
+    }
+    }
+    
+            {
+        outlineColor: 1ED91E
+        rotate: false
+        mirror: false
+        "shootY": 0,
+        x: 0
+        y: -9
+        "baseRotation": 0.0, 
+      "rotationLimit": 70.0, 
+        reload: 180
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+            bullet: {
+      type: BasicBulletType
+        spawnUnit: reformer
+       }
+
+    }
+    
+]
+}

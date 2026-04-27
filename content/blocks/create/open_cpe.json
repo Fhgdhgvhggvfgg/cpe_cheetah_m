@@ -1,0 +1,20 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":2, 
+"description":"",
+"displayNane":"create cpe1",
+"consumes":{
+"items":[{"item":cpe_fund,"amount":1}]
+}
+"health":3600,
+"itemCapacity":100,
+"name": "open cpe",
+"outputItem":{"item":"cpe","amount":100},
+"requirements":[{"item":"cpe_fund","amount":1}],
+"research":"crafter gold",
+"size":1
+"type": "GenericCrafter",
+
+    alwaysUnlocked: true
+}

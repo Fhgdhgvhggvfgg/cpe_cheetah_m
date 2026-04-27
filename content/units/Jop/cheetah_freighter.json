@@ -1,0 +1,39 @@
+{
+"type":"payload",
+alwaysUnlocked: false,
+
+"template": "ErekirUnitType",
+hitSize: 67
+coreUnitDock:true,
+flying:true,
+health:20000,
+localisedName: "cheetah freighter",
+speed: 4,
+rotateSpeed: 3,
+"payloadCapacity": 6000,
+
+immunities: [
+	"sapped",
+	"wet",
+	"tarred",
+	"slow",
+	"melting",
+	"burning"
+]
+
+abilities:[
+
+{
+	"type": "mindustry.entities.abilities.ForceFieldAbility",
+	"radius": 180,
+	"regen": 10,
+	"max": 360,
+	"cooldown": 550
+}
+
+
+
+]
+
+    alwaysUnlocked: true
+}

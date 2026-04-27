@@ -1,0 +1,61 @@
+type:payload
+flying:true
+"lowAltitude": true,
+name:cheetah developer
+description:Cheetah is a developer who pilots a powerful laser vehicle It also treats friendly blocks.
+"template": "ErekirUnitType",
+accel: 0.06
+drag: 0.06
+health:2400
+speed:3
+armor:4
+"payloadCapacity": 0,
+"hitSize":50
+rotateSpeed:4
+useEngineElevation:false
+faceTarget:true
+commands: [move, repair, assist]
+outlineColor:000000
+
+abilities:[
+]
+
+weapons: [
+
+    {
+        name: cannon_lazer
+        outlineColor: 1ED91E
+        rotate: true
+        mirror: true
+        x: 12
+        y: 3
+        "baseRotation": 0.0, 
+      "rotationLimit": 70.0, 
+        reload: 40
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: bolt
+        
+    bullet: {
+      type: LaserBulletType
+        length: 220
+        width: 6
+        damage: 190
+        hitEffect: lightningShoot
+        shootEffect: lightningShoot
+        "collidesTeam":true,
+    "healPercent":5,
+        colors: [
+          8DEEEB
+          8DEEEB
+          FFFFFF
+        ],
+        sideAngle: -45
+        sideLength: 30
+        sideWidth: 3.4
+    }
+    }
+    
+    
+ ]
+     alwaysUnlocked: true

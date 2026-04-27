@@ -1,0 +1,131 @@
+type:flying
+flying:true
+name:cheetah narzo
+description:cheetah.
+"template": "ErekirUnitType",
+health:8000
+speed:3
+armor:4
+"hitSize":30
+rotateSpeed:4
+useEngineElevation:false
+faceTarget:true
+commands: [move, assist]
+
+abilities:[
+
+]
+
+weapons: [
+
+    {
+        name: light
+        outlineColor: 1ED91E
+        rotate: true
+        mirror: true
+        shootStatus: heal_same
+        x: 50
+        y: -30
+        reload: 20
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: fire_ball
+        
+        bullet: {
+      type: BasicBulletType
+        lightRadius: 10
+        lightColor: C6FF6BFF
+        damage: 240
+        scaleVelocity: true
+        splashDamage: 20
+        splashDamageRadius: 30
+        height: 7.5
+        width: 7.5
+        speed: 7
+        lifetime: 70
+        shrinkX: 0
+        shrinkY: 0
+        trailChance: 2
+        trailParam: 10
+        trailLength: 19
+        trailColor: C6FF6BFF
+        trailWidth: 5
+        trailEffect: {
+          type: ParticleEffect
+          particles: 10
+          length: 3
+          baseLength: 3
+          lifetime: 19
+          interp: circleOut
+          cone: 360
+          offset: 3
+          lightColor: FAE965
+          colorFrom: ffffff
+          colorTo: FAE965
+          sizeFrom: 3
+          sizeTo: 0
+        },
+        fragBullets: 5
+        fragVelocityMin: 0.2
+        fragRandomSpread: 180
+        fragSpread: 360
+        fragLifeMin: 0.8
+        fragBullet: {
+        type: BasicBulletType
+        sprite: circle-bullet
+        damage: 230
+        height: 14
+        width: 12
+        speed: 4
+        lifetime: 100
+        homingPower: 0.2
+        homingDelay: 17
+        homingRange: 100
+        trailChance: 2
+        trailParam: 10
+        trailLength: 10
+        trailColor: FAE965
+        trailWidth: 5
+        trailEffect: {
+          type: ParticleEffect
+          particles: 10
+          length: 3
+          baseLength: 3
+          lifetime: 25
+          interp: circleOut
+          cone: 360
+          offset: 3
+          lightColor: FAE965
+          colorFrom: ffffff
+          colorTo: FAE965
+          sizeFrom: 3
+          sizeTo: 0
+        },
+        fragBullets: 1
+        fragVelocityMin: 0.8
+        fragLifeMin: 0.8
+        fragRandomSpread: 0
+        fragSpread: 0
+        fragBullet: {
+        type: LaserBulletType
+        length: 100,
+        width: 20
+        damage: 100
+        hitEffect: lightningShoot
+        shootEffect: lightningShoot
+        colors: [
+          FAE965
+          FF00EE
+          FAE965
+        ],
+        sideAngle: -45
+        sideLength: 30
+        sideWidth: 3.4
+       }
+       }
+    }
+    }
+    
+    
+ ]
+     alwaysUnlocked: true

@@ -1,0 +1,154 @@
+{
+"type":"payload",
+alwaysUnlocked: false,
+buildRange:260,
+buildSpeed:5,
+accel: 0.06
+drag: 0.06
+"rotateSpeed": 8.5,
+  "engineSize": 0, 
+
+"template": "ErekirUnitType",
+hitSize: 25
+canAttack:true,
+contorller:BuilderAI,
+coreUnitDock:true,
+defaultController: BuilderAI,
+flying:true,
+health:2900,
+itemCapacity: 150,
+localisedName: "ema",
+mineFloor:true
+mineRange: 180
+"mineSpeed":15,
+mineTier: 11
+mineWalls:true
+speed: 6,
+"payloadCapacity": 1500,
+
+
+abilities:[
+
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 0,
+      "spawnY": -40,
+      "unit": "cpe_entity",
+      "spawnTime": 2700
+    },
+
+]
+
+
+weapons: [
+
+
+{
+    shooty: 8
+    reload: 80
+    alternate: false
+    mirror: true
+    rotate: false
+    shootSound: fire_1
+    bullet: {
+      type: BasicBulletType
+        lightRadius: 10
+        lightColor: C6FF6BFF
+        damage: 50
+        scaleVelocity: true
+        splashDamage: 20
+        splashDamageRadius: 30
+        height: 7.5
+        width: 7.5
+        speed: 5
+        lifetime: 40
+        shrinkX: 0
+        shrinkY: 0
+        trailChance: 2
+        trailParam: 10
+        trailLength: 19
+        trailColor: C6FF6BFF
+        trailWidth: 5
+        trailEffect: {
+          type: ParticleEffect
+          particles: 10
+          length: 3
+          baseLength: 3
+          lifetime: 19
+          interp: circleOut
+          cone: 360
+          offset: 3
+          lightColor: FF00EE
+          colorFrom: ffffff
+          colorTo: FF00EE
+          sizeFrom: 3
+          sizeTo: 0
+        },
+        fragBullets: 5
+        fragVelocityMin: 0.2
+        fragRandomSpread: 180
+        fragSpread: 360
+        fragLifeMin: 0.8
+        fragBullet: {
+        type: BasicBulletType
+        sprite: circle-bullet
+        damage: 60
+        height: 14
+        width: 12
+        speed: 3
+        lifetime: 100
+        homingPower: 0.2
+        homingDelay: 17
+        homingRange: 100
+        trailChance: 2
+        trailParam: 10
+        trailLength: 10
+        trailColor: FF00EE
+        trailWidth: 5
+        trailEffect: {
+          type: ParticleEffect
+          particles: 10
+          length: 3
+          baseLength: 3
+          lifetime: 25
+          interp: circleOut
+          cone: 360
+          offset: 3
+          lightColor: FF00EE
+          colorFrom: ffffff
+          colorTo: FF00EE
+          sizeFrom: 3
+          sizeTo: 0
+        },
+        fragBullets: 1
+        fragVelocityMin: 0.8
+        fragLifeMin: 0.8
+        fragRandomSpread: 0
+        fragSpread: 0
+        fragBullet: {
+        type: LaserBulletType
+        length: 100,
+        width: 20
+        damage: 24
+        hitEffect: lightningShoot
+        shootEffect: lightningShoot
+        colors: [
+          FF00EE
+          FF00EE
+          FFFFFF
+        ],
+        sideAngle: -45
+        sideLength: 30
+        sideWidth: 3.4
+       }
+       }
+    }
+}
+
+]
+
+    "loopSound": "music_lader",
+  "loopSoundVolume": 2, 
+
+    alwaysUnlocked: true
+}

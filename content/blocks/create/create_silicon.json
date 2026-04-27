@@ -1,0 +1,18 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":40, 
+"description":"silicone manufacturing plant",
+"displayNane":"create cpe3",
+"consumes":{"power":1,"items":["graphite/1","sand/3"]},
+"health":3600,
+"itemCapacity":80,
+"name": "creat silicon",
+"outputItem":{"item":"silicon","amount":3},
+"requirements":[{"item":"cpe","amount":35}],
+"research":"crafter gold",
+"size":1
+"type": "GenericCrafter",
+
+    alwaysUnlocked: true
+}

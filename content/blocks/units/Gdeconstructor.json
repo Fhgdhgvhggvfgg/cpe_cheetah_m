@@ -1,0 +1,18 @@
+{
+  "type": "PayloadDeconstructor",
+  "name": "GDeconstructor",
+  "description": "A laboratory that breaks down bodies into their basic elements up to a size of 19 blocks.",
+  "size": 3,
+  "health":3,
+  "itemCapacity": 1000,
+  "deconstructSpeed": 6,
+  "hasPower": true,
+  "maxPayloadSize": 19,
+  "consumes": { },
+  alwaysUnlocked: true
+  "regionSuffix": "-dark",
+  "category": "units",
+  "requirements": [
+    "cpe/0",
+  ]
+}

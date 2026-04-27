@@ -1,0 +1,53 @@
+name: cheetah archer
+description: Cheetah Archer girl fires powerful arrows
+type: mech 
+mechLegColor: 565666FF
+health: 340
+armor: 1
+"template": "ErekirUnitType",
+hitSize: 25
+speed: 3
+stepShake: 0
+rotateSpeed: 7
+accel: 0.15
+mechSideSway: 0.25
+itemCapacity: 12
+outlineColor: 565666FF
+weapons: [
+    {
+        name: mechanical-launcher-cannon
+        rotate: false
+        mirror: false
+        x: 0
+        y: 9
+        reload: 25
+        recoil: 1
+        ejectEffect: casing2
+        shootSound: archer
+        
+    bullet: {
+                type: SolidBulletType
+                damage: 80
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 30
+                knockback: -1
+                backColor: FAE965
+                frontColor: FAE965
+                mixColorFrom: FAE965
+                mixColorTo: FAE965
+                width: 20
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 100
+		splashDamage: 80
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: FAE965
+               }
+    }
+ ]
+
+    alwaysUnlocked: true

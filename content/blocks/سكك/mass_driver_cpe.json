@@ -1,0 +1,13 @@
+category: distribution
+consumes: {"power":0.6},
+"description":"A block that launches elements great distances and requires some energy.",  
+health: 900
+itemCapacity: 50
+localisedName: masd driver cpe
+range: 670
+requirements:[cpe_fund/5]
+research:{"parent":"lead_bricon"}
+size: 2
+type: MassDriver
+
+    alwaysUnlocked: true

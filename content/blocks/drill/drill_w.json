@@ -1,0 +1,25 @@
+{
+  "name": "drill CPE normal",
+  "description": "Regular size drill with medium power",
+"health": 360,  
+"type": "Drill",
+  "size": 2,
+  "tier": 3,
+  "itemCapacity": 40,
+  "drillTime": 180,
+  "hasPower": false,
+  "powerConsumes": 2,
+  "drawMineItem": false,
+  "consumes": {
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.02,
+      "optional": true,
+      "booster": true
+    }
+  },
+  "requirements": [{"item":"cpe","amount":20}],
+  "category": "production",
+  "research": "lead_e_pndr_1"
+      alwaysUnlocked: true
+}

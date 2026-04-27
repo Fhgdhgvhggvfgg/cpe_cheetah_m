@@ -1,0 +1,20 @@
+Type: Battery
+Name: battery
+description: A battery that stores backup power.
+size: 1
+health: 890
+armor: 8
+hasPower: true
+emptyLightColor: f8c266
+fullLightColor: fb9567
+powerCapacity: 70
+outputsPower: true
+consumesPower: true
+consumes: {
+  powerBuffered: 80000
+}
+requirements: [
+cpe/62
+]
+category: power
+alwaysUnlocked: true

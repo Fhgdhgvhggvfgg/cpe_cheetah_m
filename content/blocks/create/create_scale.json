@@ -1,0 +1,21 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":240, 
+"description":"produces metaglass but without using copper",
+"displayNane":"create scale",
+"consumes":{
+power: 2
+"items":[{"item":sand,"amount":45}]
+}
+"health":3600,
+"itemCapacity":160,
+"name": "create scale",
+"outputItem":{"item":"scale","amount":1},
+"requirements":[{"item":"cpe","amount":230}],
+"research":"crafter gold",
+"size":2
+"type": "GenericCrafter",
+
+    alwaysUnlocked: true
+}

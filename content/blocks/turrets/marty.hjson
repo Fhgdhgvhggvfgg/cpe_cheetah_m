@@ -1,0 +1,39 @@
+description: A cheetah man with robotic limbs that fires a red heat beam with a farther and stronger range.
+name: marty
+type: ContinuousTurret
+rotateSpeed: 5
+reload: 1
+targetGround: true
+targetAir: true
+range: 230
+recoil: 1
+shootSound: torch
+size: 5
+health: 4000
+xRand: 1
+consumes: {
+power: 2
+coolant: {
+  type: ConsumeCoolant
+  allowGas: false
+  allowLiquid: true
+  amount: 0.2
+}
+}
+
+shootType: {
+  type: PointLaserBulletType
+  color: ff0000
+  length: 240
+  width: 90
+  damage: 140
+  buildingDamageMultiplier: 0.3
+}
+
+requirements: [
+cpe/340
+]
+category: turret
+parent: lancer
+research: slavo
+    alwaysUnlocked: true

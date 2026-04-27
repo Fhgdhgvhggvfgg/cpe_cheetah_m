@@ -1,0 +1,20 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":140, 
+"description":"Advanced CPE plant produces CPE from coal using energy",
+"displayNane":"create cpe2",
+"consumes":{
+"items":[]
+}
+"health":1000,
+"itemCapacity":80,
+"name": "creat cpe 2",
+"outputItem":{"item":"cpe","amount":1},
+"requirements":[{"item":"cpe","amount":50}],
+"research":"crafter gold",
+"size":3
+"type": "GenericCrafter",
+
+    alwaysUnlocked: true
+}

@@ -1,0 +1,25 @@
+name: to equip small
+  type: CoreBlock
+  health: 4000
+  size: 4
+  armor: 10
+  isFirstTier: false
+  itemCapacity: 5400
+  unitCapModifier: 60
+  buildCostMultiplier: 0.7
+  squareSprite: false
+    "thrusterLength": 30
+  unitType: TTX
+  "requirements": [
+    {
+      "item": "cpe",
+      "amount": 0
+    },
+    
+  ],
+  "category": "units"
+
+  alwaysUnlocked: true
+  drawCracks: true
+  createRubble: true
+  category: effect

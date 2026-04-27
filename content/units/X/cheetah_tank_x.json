@@ -1,0 +1,140 @@
+{
+"description": "big russian tonk",
+"name":"cheetah tank x",
+"template": "ErekirUnitType",
+"type": "tank",
+"hitSize": 50,
+"crushDamage": 2,
+"treadPullOffset": 6,
+"singleTarget": false,
+"omniMovement": false,
+"faceTarget": false,
+"health": 12000,
+"armor": 20,
+"speed": 2,
+"rotateSpeed": 5,
+"itemCapacity": 0,
+"outlineColor": "44413c",
+"treadRects": [
+    {
+      "x": 29,
+      "y": -84,
+      "width": 19,
+      "height": 170
+    }
+  ],
+
+  "abilities": [
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 20,
+      "spawnY": 20,
+      "unit": "cheetah_soldier_m",
+      "spawnTime": 1300
+    },
+  
+  {
+      "type": "UnitSpawnAbility",
+      "spawnX": 20,
+      "spawnY": -20,
+      "unit": "cheetah_soldier_m",
+      "spawnTime": 1300
+    },
+
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": -20,
+      "spawnY": 20,
+      "unit": "cheetah_soldier_g",
+      "spawnTime": 1300
+    }
+
+{
+      "type": "UnitSpawnAbility",
+      "spawnX": -20,
+      "spawnY": -20,
+      "unit": "cheetah_soldier_g",
+      "spawnTime": 1300
+    }
+
+ 	{
+		type: SpawnDeathAbility
+		amount: 1
+		unit: cheetah_tank
+}
+ 
+ 
+  ],
+
+
+"weapons": [
+    {
+                name: cannon_tank_x
+                mirror: false
+                top: true
+                rotate: true
+		rotateSpeed: 3
+                x: 0
+                y: 20
+                reload: 20
+                shoot: {
+                    shots: 1
+                    shotDelay: 5
+            }
+            inaccuracy: 0
+            recoil: 2
+            shootSound: cannon
+            shootEffect: none
+            bullet: {
+                type: SolidBulletType
+                damage: 600
+                homing: false
+                speed: 9
+                sprite: large-bomb
+                lifetime: 35
+                knockback: -1
+                backColor: FAE965
+                frontColor: FAE965
+                mixColorFrom: FAE965
+                mixColorTo: FAE965
+                width: 10
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 50
+		splashDamage: 500
+		hitEffect: blastExplosion
+        trailLength: 15
+        trailColor: FAE965
+               }
+}
+   
+{
+                name: cannon_tank2
+                mirror: true
+                top: true
+                rotate: true
+		rotateSpeed: 3
+                x: 15
+                y: -15
+                reload: 5
+                shoot: {
+                    shots: 1
+                    shotDelay: 5
+            }
+            inaccuracy: 0
+            recoil: 2
+            shootSound: bolt
+            shootEffect: none
+"bullet":{"damage":20,"height":32,"lifetime":20,speed:16}
+}
+   
+
+
+  ]
+  
+      "loopSound": "engine",
+  "loopSoundVolume": 1.4, 
+  
+      alwaysUnlocked: true
+}

@@ -1,0 +1,13 @@
+type: PayloadConveyor
+size: 4
+moveTime: 45
+moveForce: 300
+payloadLimit: 15
+category: units
+requirements: [
+cpe/34
+]
+research: {},
+alwaysUnlocked: true
+
+researchCost: [ ]

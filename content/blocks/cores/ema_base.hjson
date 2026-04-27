@@ -1,0 +1,16 @@
+
+  {
+alwaysUnlocked:true,
+"category": "effect",
+health:34000
+isFirstTier:true
+itemCapacity: 60000
+localizedName: "ema base",
+requirements: [{"item":"cpe","amount":0}]
+research:asteroidgen_origin
+size:10
+type:CoreBlock
+unitCapModifier: 60
+unitType:ema
+}
+

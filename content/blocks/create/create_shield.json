@@ -1,0 +1,21 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":260, 
+"description":"produces metaglass but without using copper",
+"displayNane":"create shield",
+"consumes":{
+power: 2
+"items":[{"item":silicon,"amount":23}]
+}
+"health":3600,
+"itemCapacity":160,
+"name": "create shield",
+"outputItem":{"item":"shield","amount":1},
+"requirements":[{"item":"cpe","amount":180}],
+"research":"crafter gold",
+"size":2
+"type": "GenericCrafter",
+
+    alwaysUnlocked: true
+}

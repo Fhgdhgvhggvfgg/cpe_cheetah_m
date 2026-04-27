@@ -1,0 +1,74 @@
+name: cheetah bolt x die
+description: 
+type: mech 
+mechLegColor: 565666FF
+health: 900
+"template": "ErekirUnitType",
+armor: 1
+hitSize: 20
+speed: 0
+rotateSpeed: 0
+accel: 0.15
+mechSideSway: 0.25
+itemCapacity: 12
+outlineColor: 565666FF
+
+
+abilities: [
+
+]
+
+
+weapons: [
+
+ {
+                name: focus-rail
+                mirror: false
+                alternate: true
+                continuous: true
+                shootStatus: hits_same
+                top: true
+                "inaccuracy": 180,
+                rotate: true
+		rotateSpeed: 40
+                x: 0
+                y: 0
+                reload: 0.05
+                shoot: {
+                    shots: 1
+                    shotDelay: 0
+            }
+            inaccuracy: 0
+            recoil: 0
+            shootSound: beam
+            shootEffect: none
+    bullet: {
+                type: SolidBulletType
+                damage: 10
+                homing: false
+                speed: 5
+                sprite: large-bomb
+                lifetime: 18
+                knockback: -1
+                backColor: 1ED91E
+                frontColor: 1ED91E
+                mixColorFrom: 1ED91E
+                mixColorTo: 1ED91E
+                width: 20
+                height: 20
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 300
+		splashDamage: 400
+		hitEffect: blastExplosion
+        trailLength: 4
+        trailColor: 1ED91E
+               }
+ }
+    
+    
+]
+
+
+   alwaysUnlocked: true
+

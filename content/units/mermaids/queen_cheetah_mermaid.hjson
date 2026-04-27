@@ -1,0 +1,65 @@
+type: naval
+name:cheetah the mermaid
+description:cheetah.
+health:19000
+speed:2
+armor:4
+hitSize:36
+rotateSpeed:6
+useEngineElevation:false
+faceTarget:true
+outlineColor:000000
+"template": "ErekirUnitType",
+
+abilities:[
+
+ 	{
+		type: SpawnDeathAbility
+		amount: 1
+		unit: crown
+}
+
+]
+
+"weapons": [
+    {
+                mirror: false
+                top: true
+                rotate: true
+                x: 0
+                y: 8
+                reload: 100
+                shoot: {
+                    shots: 7
+                    shotDelay: 4
+            }
+            inaccuracy: 0
+            recoil: 2
+            shootSound: shouting
+            shootEffect: none
+            bullet: {
+                type: SolidBulletType
+                damage: 670
+                homing: false
+                speed: 7
+                sprite: large-bomb
+                lifetime: 70
+                knockback: -1
+                backColor: FFFFFF
+                frontColor: FFFFFF
+                mixColorFrom: FFFFFF
+                mixColorTo: FFFFFF
+                width: 60
+                height: 7
+		fragOnHit: true
+		fragBullets: 50
+		splashDamageRadius: 45
+		splashDamage: 200
+		hitEffect: blastExplosion
+        trailLength: 15
+        trailColor: FFFFFF
+               }
+}
+   ]
+   
+   alwaysUnlocked: true

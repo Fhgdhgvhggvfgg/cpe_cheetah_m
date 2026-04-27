@@ -1,0 +1,21 @@
+{
+"category":"crafting"
+"craftEffect":"smeltsmoke",
+"craftTime":240, 
+"description":"produces metaglass but without using copper",
+"displayNane":"create scale",
+"consumes":{
+power: 2
+"items":[{"item":sand,"amount":160},{"item":graphite,"amount":100}]
+}
+"health":3600,
+"itemCapacity":240,
+"name": "create wing",
+"outputItem":{"item":"wing","amount":1},
+"requirements":[{"item":"cpe_fund","amount":3}],
+"research":"crafter gold",
+"size":1
+"type": "GenericCrafter",
+
+    alwaysUnlocked: true
+}

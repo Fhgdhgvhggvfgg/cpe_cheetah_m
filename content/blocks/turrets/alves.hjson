@@ -1,0 +1,37 @@
+description: A cheetah man who shoots blue radiation from his hands to destroy enemies.
+name: alves
+type: ContinuousTurret
+rotateSpeed: 5
+reload: 1
+targetGround: true
+targetAir: true
+range: 150
+recoil: 1
+shootSound: torch
+size: 3
+health: 1900
+xRand: 1
+consumes: {
+power: 2
+coolant: {
+  type: ConsumeCoolant
+  allowGas: false
+  allowLiquid: true
+  amount: 0.2
+}
+}
+shootType: {
+  type: PointLaserBulletType
+  color: 17E1E1
+  length: 150
+  width: 25
+  damage: 20
+  buildingDamageMultiplier: 0.2
+}
+requirements: [
+cpe/35
+]
+category: turret
+parent: lancer
+research: slavo
+    alwaysUnlocked: true

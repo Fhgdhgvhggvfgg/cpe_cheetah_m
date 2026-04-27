@@ -1,0 +1,74 @@
+type: naval
+name:guard cheetah mermaid
+description:cheetah.
+health:2400
+speed:2.5
+armor:4
+hitSize:46
+rotateSpeed:6
+useEngineElevation:false
+faceTarget:true
+outlineColor:000000
+"template": "ErekirUnitType",
+
+abilities:[
+
+
+
+]
+
+"weapons": [
+
+    {
+                name: can
+                mirror: false
+                top: true
+                rotate: true
+		rotateSpeed: 5
+                x: -10
+                y: 18
+                reload: 40
+                
+                
+                shoot: {
+      shots: 1
+      shotDelay: 3
+    }
+    bullet: {
+      type: BasicBulletType
+      speed: 8
+      trailColor: ffffff
+      frontColor: 00C1FC
+      backColor: 00C1FC
+      lifetime: 34
+      damage: 290
+      width: 10
+      height: 15
+      trailWidth: 1
+      trailLength: 4
+      pierce: true
+      shrinkX: 0
+      shrinkY: 0
+      fragBullets: 10
+      fragSpread: 60
+      fragRandomSpread: 0
+      fragVelocityMin: 1
+      fragVelocityMax: 1
+      fragLifeMin: 1
+      fragLifeMax: 1
+      fragBullet: {
+      type: LightningBulletType
+          lightningColor: 00C1FC
+          lightningLength: 10
+          lightningDamage: 120
+          hitSound: spark
+          despawnSound: spark
+          lifetime: 1
+    }
+}
+                
+}
+ 
+ ]
+ 
+ alwaysUnlocked: true

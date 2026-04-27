@@ -1,0 +1,63 @@
+type: missile
+name:crown
+flying:true
+description:cheetah.
+health:60000
+speed:0
+armor:4
+hitSize:10
+rotateSpeed:0
+lifetime: 5400
+useEngineElevation:false
+"engineSize": 0, 
+faceTarget:true
+outlineColor:000000
+"template": "ErekirUnitType",
+
+abilities:[
+
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 0,
+      "spawnY": 0,
+      "unit": "queen_cheetah_mermaid",
+      "spawnTime": 5400
+    }
+
+
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 0,
+      "spawnY": 54,
+      "unit": "guard_cheetah_mermaid",
+      "spawnTime": 1500
+    }
+
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": -50,
+      "spawnY": -21,
+      "unit": "guard_cheetah_mermaid",
+      "spawnTime": 1300
+    }
+
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 50,
+      "spawnY": -21,
+      "unit": "guard_cheetah_mermaid",
+      "spawnTime": 1000
+    }
+
+
+{
+	"type": "mindustry.entities.abilities.ForceFieldAbility",
+	"radius": 100,
+	"regen": 10,
+	"max": 3000,
+	"cooldown": 300
+}
+
+]
+
+alwaysUnlocked: true

@@ -1,0 +1,128 @@
+{
+"type":"payload",
+alwaysUnlocked: false,
+buildRange:250,
+buildSpeed:6,
+accel: 0.06
+drag: 0.06
+"rotateSpeed": 8.5,
+  "engineSize": 0, 
+
+"template": "ErekirUnitType",
+hitSize: 28
+canAttack:true,
+contorller:BuilderAI,
+coreUnitDock:true,
+defaultController: BuilderAI,
+flying:true,
+health:3000,
+itemCapacity: 130,
+localisedName: "name",
+mineFloor:true
+mineRange: 250
+"mineSpeed":16,
+mineTier: 11
+mineWalls:true
+speed: 6,
+"payloadCapacity": 1500,
+
+immunities: [
+	"sapped",
+	"wet",
+	"tarred",
+	"slow",
+	"melting",
+	"burning"
+]
+
+abilities:[
+    {
+      "type": "UnitSpawnAbility",
+      "spawnX": 0,
+      "spawnY": -40,
+      "unit": "cpe_entity",
+      "spawnTime": 2700
+    },
+]
+
+
+weapons: [
+
+
+{
+	"name": "flamer",
+	"x": 0,
+	"y": 20,
+	"reload": 7,
+	"top": true,
+	"mirror": false,
+	"alternate": true,
+	"shootY": 3,
+	
+	shoot: {
+		type: ShootPattern
+		shots: 2
+		shotDelay: 4
+	}
+	
+	"recoil": 1.5,
+	"rotate": false,
+	"inaccuracy" : 7, 
+	"shootSound": "flame",
+	"shootCone": 18,
+	
+	bullet: {
+		"type": "BasicBulletType",
+		"collidesAir": true,
+		"speed": 5,
+		"damage": 37,
+		"width": 0.1,
+		"height": 0.1,
+		
+		shootEffect: {
+			"type": "ParticleEffect",
+			"particles": 30,
+			"sizeFrom": 8,
+			"sizeTo": 0,
+			"length": 300,
+			"lifetime": 90,
+			"interp": "circleOut",
+			"lightColor": "FF5845FF",
+			"colorFrom": "FFDCD8FF",
+			"colorTo": "FF5845FF",
+			"cone": 10
+		}
+		
+		"smokeEffect": "none",
+		"lifetime": 34,
+		"despawnEffect": "none",
+		"hittable": false,
+		"reflectable": false,
+		
+		hitEffect: {
+			"type": "ParticleEffect",
+			"line": true,
+			"particles": 5,
+			"lifetime": 60,
+			"interp": "circleOut",
+			"length": 50,
+			"cone": -30,
+			"lenFrom": 5,
+			"lenTo": 0,
+			"colorFrom": "FF5845FF",
+			"colorTo": "FF5845FF"
+		}
+		
+		"pierce": true,
+		"incendAmount": 0
+	}
+}
+
+
+]
+
+    "loopSound": "music_lader",
+  "loopSoundVolume": 2, 
+
+    alwaysUnlocked: true
+}

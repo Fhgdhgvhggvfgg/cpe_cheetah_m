@@ -1,0 +1,95 @@
+name: egg
+description: imagen crawler strangling your units and exploding directly on your face
+type: mech
+"template": "ErekirUnitType",
+mechLegColor: 565666FF
+health: 235
+armor: 1
+hitSize: 9
+controller: SuicideAI
+speed: 0
+rotateSpeed: 0
+accel: 0.15
+mechSideSway: 0.25
+itemCapacity: 15
+outlineColor: 565666FF
+
+abilities:[
+ 
+ 
+ {
+		type: SpawnDeathAbility
+		amount: 3
+		unit: spider
+	}
+ ]
+
+weapons: [
+ {
+  name: ligma
+  reload: 0
+  shootCone: 180
+  ejectEffect: none
+  shootSound: explosion
+  shoot: {
+  firstShotDelay: 45
+  }
+  bullet: {
+    type: BombBulletType
+    hitEffect: pulverize
+    lifetime: 5
+    speed: 1
+    splashDamageRadius: 65
+    instantDisappear: true
+    splashDamage: 85
+    killShooter: true
+    hittable: false
+    collidesAir: false
+    fragBullets: 4
+    fragCone: 360
+    hitSound: explosion
+    fragBullet: {
+     type: LaserBulletType
+     length: 0
+     colors: [fag020 faga02 ffffff]
+     damage: 5
+   }
+ }
+ }
+{ 
+  name: dro-no3-w
+  
+  top: false
+  x: 0
+  y: 0
+  shootY: 0
+  shootX: 0
+  
+  mirror: true
+  rotate: false
+  shootCone: 10
+  shootSound: explosion
+  inaccuracy: 0
+  reload: 110
+  targetInterval: 5
+  targetSwitchInterval: 10
+  cooldownTime: 5
+  bullet: {
+   type: BasicBulletType
+   width: 9
+   height: 0
+   
+   damage: 5
+   shootEffect: sparkShoot
+   trailInterval: 2
+   smokeEffect: shootBigSmoke
+   speed: 1
+   lifetime: 1
+   status: unmoving
+   statusDuration: 120
+   }
+  }
+]
+   alwaysUnlocked: true
+
+research: crawler

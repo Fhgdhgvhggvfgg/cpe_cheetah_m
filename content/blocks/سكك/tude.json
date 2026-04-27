@@ -1,0 +1,9 @@
+category:liquid
+"name": "tude",
+health:150
+localizedName:"titanium enforeced conduit"
+liquidCapacity:15
+requirements:[cpe/2]
+research:ast_conduit_1
+Type:Conduit
+alwaysUnlocked: true

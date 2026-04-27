@@ -1,0 +1,16 @@
+
+description: junction finallyaa
+requirements: [
+ cpe/8
+]
+category: distribution
+research: rail-junction
+
+
+  "name": "CPE overpass",
+  "type": "DuctBridge",
+  "configurable": true,
+  "config": "point",
+  "range": 5
+
+alwaysUnlocked: true

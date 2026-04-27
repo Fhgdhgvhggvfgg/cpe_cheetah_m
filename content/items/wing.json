@@ -1,0 +1,9 @@
+{
+  "type": "item",
+  "name": "wing",
+  "localizedName": "wing",
+  "description": "This is a cool animated item.",
+  "transitionFrames": 0
+  "color": FFFFFF
+      alwaysUnlocked: true
+}

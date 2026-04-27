@@ -1,0 +1,33 @@
+{
+  "type": "OverdriveProjector",
+  "name": "custom accelerator power cpe",
+  "localizedName": "Custom Accelerator",
+  "description": "A powerful accelerating block doubles the speed of other blocks. It uses silicon and energy. It can also speed up all team blocks in the arena.",
+  "category": "effect",
+  "size": 5,
+  "requirements": [
+    { "item": "cpe_fund", "amount": 120},
+  ],
+
+  "baseColor": "87CEEB",
+  "range": 9999999999,
+  "speedBoost": 1.1,
+  "powerConsumption": 1.5,
+  "liquidCapacity": 20,
+  "consumes": {
+  power: 1.5
+  "items":[{"item":silicon,"amount":4}]
+    "liquid": {
+      "liquid": "water",
+      "amount": 1,
+      "optional": true,
+      "booster": true 
+    }
+  },
+
+  "liquidBoost": 1.4,
+  "warmup": 60,
+  "activeEffectIntensity": 0.6,
+  "health": 3000,
+alwaysUnlocked: true
+}

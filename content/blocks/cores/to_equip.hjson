@@ -1,0 +1,25 @@
+name: to equip
+  type: CoreBlock
+  health: 9000
+  size: 6
+  armor: 10
+  isFirstTier: false
+  itemCapacity: 8000
+  unitCapModifier: 60
+  buildCostMultiplier: 0.7
+  squareSprite: false
+    "thrusterLength": 30
+  unitType: TTX
+  "requirements": [
+    {
+      "item": "cpe",
+      "amount": 0
+    },
+    
+  ],
+  "category": "units"
+
+  alwaysUnlocked: true
+  drawCracks: true
+  createRubble: true
+  category: effect

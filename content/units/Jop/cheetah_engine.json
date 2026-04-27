@@ -1,0 +1,18 @@
+{
+alwaysUnlocked: false,
+buildRange:60,
+buildSpeed:6,
+"hitSize": 40,
+"template": "ErekirUnitType",
+canAttack:true,
+contorller:BuilderAI,
+coreUnitDock:true,
+flying:true,
+health:1000,
+localisedName: "cheetah engine",
+commands: [move, assist]
+speed: 6,
+"type":"flying",
+
+    alwaysUnlocked: true
+}

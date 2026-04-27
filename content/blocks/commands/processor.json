@@ -1,0 +1,25 @@
+{
+  "type": "LogicBlock",
+  "localizedName": "control",
+  "description": "It is an advanced control that executes multiple commands..",
+  "details": "Processor frequency: 1 GHz\nInstructions per tick: 6\nMemory capacity: 1024 B",
+  "category": "logic",
+  "size": 1,
+  "health": 120,
+  "instructionsPerTick": 6,
+  "memoryCapacity": 1024,
+    "alwaysUnlocked": true
+  "requirements": [
+
+    {
+      "item": "cpe",
+      "amount": 130
+    }
+  ],
+  
+  "consumes": {
+    "power": 0.5
+  },
+  
+  "buildVisibility": "shown",
+}

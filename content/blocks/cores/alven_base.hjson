@@ -1,0 +1,26 @@
+name: alix base
+  type: CoreBlock
+  health: 32000
+  size: 10
+  armor: 10
+  isFirstTier: false
+  itemCapacity: 60000
+  unitCapModifier: 60
+  buildCostMultiplier: 0.7
+  squareSprite: false
+  unitType: alven
+  "requirements": [
+    {
+      "item": "cpe",
+      "amount": 0
+    },
+
+  ],
+  "category": "units"
+
+  alwaysUnlocked: true
+  drawCracks: true
+  createRubble: true
+  research: alix base
+  researchCostMultiplier: 0.05
+  category: effect
