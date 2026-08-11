@@ -1,5 +1,5 @@
 {
-name: "cpe cheetah"
+name: "cpe cheetah m"
 description: 
 ''' 
 Make the cheetah fight fiercely
@@ -7,7 +7,7 @@ Make the cheetah fight fiercely
 author: "keven"
 minGameVersion: 145
 version: "1.0"
-displayName: "cpe cheetah"
+displayName: "cpe cheetah m"
 subtitle: "cheetah mindustry"
 
 
